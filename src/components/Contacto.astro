@@ -1,0 +1,81 @@
+---
+
+---
+
+<section
+  id="contacto"
+  class="bg-primary border-solid border-black border-t-4 border-b-4 drop-shadow-lg shadow-lg"
+>
+  <div class="container-central text-center text-white py-3">
+    <h2 class="font-roboto font-bold text-xl p-3">
+      ¿Queres contactarte con nosotros?
+    </h2>
+    <p class="font-roboto px-8 py-2">
+      En RMG Ciudadanías, queremos hacer de tu experiencia algo simple y
+      cercano. Si tienes dudas, necesitas orientación o quieres empezar con tu
+      trámite, estamos aquí para ayudarte.
+    </p>
+    <p class="font-roboto px-8 py-2 font-bold text-lg">
+      Ofrecemos entrevistas de consulta <br />sin costo
+    </p>
+    <p class="font-roboto px-8">
+      donde podrás despejar todas tus inquietudes y conocer más sobre cómo
+      trabajamos. Creemos que cada caso es único, y estamos comprometidos a
+      brindarte la atención personalizada que mereces.
+    </p>
+    <form
+      id="contactForm"
+      class="flex flex-col text-start m-8 px-2 py-4 font-roboto border-solid border-black border-2 border-b-4 drop-shadow-lg shadow-lg"
+    >
+      <h3 class="font-bold text-center">
+        Dejanos tu consulta y nosotros te contactamos
+      </h3>
+      <label for="name" class="my-2">Nombre</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        required
+        placeholder="Ingresa tu nombre"
+        class="p-2 border-solid border-white rounded mb-4 text-black"
+      />
+
+      <label for="email" class="my-2">Email</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        required
+        placeholder="Ingresa tu email"
+        class="p-2 border-solid border-white rounded mb-4 text-black"
+      />
+
+      <label for="phone" class="my-2">Teléfono de Contacto</label>
+      <input
+        type="tel"
+        id="phone"
+        name="phone"
+        required
+        placeholder="Ingresa tu número de teléfono"
+        class="p-2 border-solid border-white rounded mb-4 text-black"
+      />
+
+      <label for="comment" class="my-2">Comentario</label>
+      <textarea
+        id="comment"
+        name="comment"
+        rows="4"
+        placeholder="Escribe tu mensaje aquí"
+        class="p-2 border-solid border-white rounded mb-4 text-black"
+      ></textarea>
+
+      <button
+        type="submit"
+        class="my-4 p-3 bg-secondary text-white text-lg drop-shadow-lg shadow-lg cursor-pointer"
+        >Enviar</button
+      >
+    </form>
+  </div>
+</section>
+
+<script src="../scripts/formHandler.js"></script>

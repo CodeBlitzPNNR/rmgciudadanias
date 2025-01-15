@@ -1,0 +1,23 @@
+---
+import Logo from "../../public/rmgLogo.png";
+import Image from "astro/components/Image.astro";
+---
+
+<section class="bg-primary">
+  <div class="container-central">
+    <nav class="flex items-center justify-between w-full">
+      <div>
+        <a class="" href="#">
+          <Image src={Logo} alt="Logo de RMG Ciudadanias" class="max-w-36" />
+        </a>
+      </div>
+      <div class="w-2/3">
+        <ul class="flex items-center justify-center p-1">
+          <li class="m-1 text-white font-custom"><a href="">Nosotros</a></li>
+          <li class="m-1 text-white font-custom"><a href="">Servicios</a></li>
+          <li class="m-1 text-white font-custom"><a href="">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</section>

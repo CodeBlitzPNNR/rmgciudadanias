@@ -1,0 +1,22 @@
+---
+import Logo from "./WhatsappGrande.astro";
+---
+
+<div id="whatsapp" class="hidden fixed bottom-16 right-4">
+  <a href="https://wa.me/123456789" target="_blank" rel="noopener noreferrer">
+    <Logo />
+  </a>
+</div>
+<script src="../scripts/whatsappHandler.js"></script>
+<style>
+  #whatsapp {
+    z-index: 1000; /* Asegúrate de que esté sobre otros elementos */
+    display: none; /* Oculto por defecto */
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  #whatsapp.show {
+    display: block; /* Muestra el componente */
+    opacity: 1;
+  }
+</style>
