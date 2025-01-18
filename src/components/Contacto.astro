@@ -1,77 +1,95 @@
 ---
-
+import Mail from "./Mail.astro";
+import Tel from "./Tel.astro";
 ---
 
-<section
-  id="contacto"
-  class="bg-primary border-solid border-black border-t-4 border-b-4 drop-shadow-lg shadow-lg"
->
-  <div class="container-central text-center text-white py-3">
-    <h2 class="font-roboto font-bold text-xl p-3">
-      ¿Queres contactarte con nosotros?
-    </h2>
-    <p class="font-roboto px-8 py-2">
-      En RMG Ciudadanías, queremos hacer de tu experiencia algo simple y
-      cercano. Si tienes dudas, necesitas orientación o quieres empezar con tu
-      trámite, estamos aquí para ayudarte.
-    </p>
-    <p class="font-roboto px-8 py-2 font-bold text-lg">
-      Ofrecemos entrevistas de consulta <br />sin costo
-    </p>
-    <p class="font-roboto px-8">
-      donde podrás despejar todas tus inquietudes y conocer más sobre cómo
-      trabajamos. Creemos que cada caso es único, y estamos comprometidos a
-      brindarte la atención personalizada que mereces.
-    </p>
+<section id="contacto" class="bg-background">
+  <div class="text-center text-black">
+    <div class="py-12">
+      <p class="font-bold text-primary text-sm">¿Necesitas ayuda?</p>
+      <h2 class="font-roboto font-bold text-3xl px-3 text-black">
+        Medios de contacto
+      </h2>
+    </div>
+    <div class="border-2 border-solid border-gold m-auto w-[400px] p-6 bg-gold/20">
+      <div class="flex gap-4 justify-left items-center text-left m-auto w-[300px]">
+        <Tel /><div>
+          <p class="font-semibold">Teléfono</p>
+          <p class="font-semibold">+54 (11) 1234 - 5678</p>          
+        </div>
+      </div>
+      <div class="flex gap-4 justify-left items-center text-left m-auto w-[300px]">
+        <Mail /><div>
+          <p class="font-semibold">Correo electrónico</p>
+          <p class="font-semibold">rmgciudadanias@blablabla.com</p>          
+        </div>
+      </div>
+    </div>
+    <div class="px-8 py-6">
+      <p class="font-roboto px-8 py-2 font-bold text-xl text-primary">
+        Ofrecemos entrevistas de consulta <br> sin costo
+      </p>
+      <p class="font-slab text-sm">
+        En RMG Ciudadanías, queremos hacer de tu experiencia algo simple y
+        cercano. Si tienes dudas, necesitas orientación o quieres empezar con tu
+        trámite, estamos aquí para ayudarte.
+      </p>
+      <br>
+      <p class="font-slab text-sm">
+        Podrás despejar todas tus inquietudes y conocer más sobre cómo trabajamos.
+        Creemos que cada caso es único, y estamos comprometidos a brindarte la
+        atención personalizada que mereces.
+      </p>
+    </div>
     <form
       id="contactForm"
-      class="flex flex-col text-start m-8 px-2 py-4 font-roboto border-solid border-black border-2 border-b-4 drop-shadow-lg shadow-lg"
+      class="flex flex-col text-start bg-primary px-8 py-12 m-2 font-roboto  drop-shadow-lg shadow-lg text-white"
     >
-      <h3 class="font-bold text-center">
+      <h3 class="font-bold text-center text-2xl">
         Dejanos tu consulta y nosotros te contactamos
       </h3>
-      <label for="name" class="my-2">Nombre</label>
+      <label for="name" class="text-sm text-white">Nombre</label>
       <input
         type="text"
         id="name"
         name="name"
         required
         placeholder="Ingresa tu nombre"
-        class="p-2 border-solid border-white rounded mb-4 text-black"
+        class="py-2 border-solid border-b-2 px-1 border-white/70 mb-4 text-white bg-black/30"
       />
 
-      <label for="email" class="my-2">Email</label>
+      <label for="email" class="text-sm">Email</label>
       <input
         type="email"
         id="email"
         name="email"
         required
         placeholder="Ingresa tu email"
-        class="p-2 border-solid border-white rounded mb-4 text-black"
+        class="py-2 border-solid border-b-2 px-1 border-white/70 mb-4 text-white bg-black/30"
       />
 
-      <label for="phone" class="my-2">Teléfono de Contacto</label>
+      <label for="phone" class="text-sm">Teléfono de Contacto</label>
       <input
         type="tel"
         id="phone"
         name="phone"
         required
         placeholder="Ingresa tu número de teléfono"
-        class="p-2 border-solid border-white rounded mb-4 text-black"
+        class="py-2 border-solid border-b-2 px-1 border-white/70 mb-4 text-white bg-black/30"
       />
 
-      <label for="comment" class="my-2">Comentario</label>
+      <label for="comment" class="text-sm">Comentario</label>
       <textarea
         id="comment"
         name="comment"
         rows="4"
         placeholder="Escribe tu mensaje aquí"
-        class="p-2 border-solid border-white rounded mb-4 text-black"
+        class="py-2 border-solid border-b-2 px-1 border-white/70 mb-4 text-white bg-black/30"
       ></textarea>
 
       <button
         type="submit"
-        class="my-4 p-3 bg-secondary text-white text-lg drop-shadow-lg shadow-lg cursor-pointer"
+        class="border-2 border-white text-white text-lg m-auto px-12 py-2 mt-2 cursor-pointer"
         >Enviar</button
       >
     </form>

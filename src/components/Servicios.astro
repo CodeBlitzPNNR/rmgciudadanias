@@ -1,65 +1,71 @@
 ---
-
+import Book from "./Book.astro"
+import Check from "./Check.astro"
+import Forms from "./Forms.astro"
+import Zoom from "./Zoom.astro"
 ---
 
 <section id="servicios">
-  <div class="container-central text-center py-3">
-    <h2 class="font-roboto font-bold text-xl p-3">
-      ¿En que te podemos ayudar?
-    </h2>
-    <p class="px-8 py-2">
-      En RMG Ciudadanías, ofrecemos un acompañamiento integral para que el
-      proceso de obtener tu ciudadanía sea simple y organizado.
-    </p>
-    <p class="font-bold text-lg px-8 py-2">Nuestros servicios incluyen:</p>
-    <div
-      class="mx-8 my-2 border-solid border-black border-2 border-b-4 drop-shadow-lg shadow-lg h-44"
-    >
-      <h3 class="font-roboto font-bold text-lg drop-shadow-lg p-2 text-primary">
-        Armado de Carpetas para ciudadanía Española e Italiana
-      </h3>
-      <p class="font-roboto p-4">
+  <div class="container-central text-center bg-white">
+    <div class="py-16">
+      <p class="font-bold text-primary text-sm">¿Cómo te podemos ayudar?</p>
+      <h2 class="font-roboto font-bold text-3xl px-3 text-black">
+        Nuestros servicios
+      </h2>    
+    </div>      
+    <div class="flex flex-col gap-3 pb-6">
+    <div class="mx-3 bg-darkbg aspect-square max-w-[480px] px-4 py-6 flex flex-col">
+      <div class="m-auto w-24 p-2">
+        <Book strokeColor="#FFD700"/>
+      </div>
+      <h3 class="font-roboto font-bold text-white text-xl mb-4">
+        Carpetas para ciudadanía <br>Española e Italiana
+      </h3>      
+      <p class="font-slab text-white/70 mb-4">
         Nos encargamos de preparar toda la documentación necesaria para que tu
         trámite sea exitoso.
       </p>
-    </div>
-    <div
-      class="mx-8 my-2 border-solid border-black border-2 border-b-4 drop-shadow-lg shadow-lg h-44"
-    >
-      <h3 class="font-roboto font-bold text-lg drop-shadow-lg p-2 text-primary">
+      <a href="/" class="px-6 py-2 border-[1px] border-primary hover:bg-primary font-semibold duration-500 text-white text-sm m-auto">Leer más</a>      
+    </div>    
+    <div class="mx-3 bg-darkbg aspect-square max-w-[480px] px-4 py-6 flex flex-col">
+      <div class="m-auto w-24 p-2">
+        <Zoom strokeColor="#FFD700"/>        
+      </div>
+      <h3 class="font-roboto font-bold text-white text-xl mb-4">
         Búsqueda y apostillado de Actas
-      </h3>
-      <p class="font-roboto p-4">
+      </h3>      
+      <p class="font-slab text-white/70 mb-4">
         Localizamos esos documentos que parecen imposibles de encontrar y
         gestionamos su apostillado para que cumplan con los requisitos legales.
       </p>
-    </div>
-    <div
-      class="mx-8 my-2 border-solid border-black border-2 border-b-4 drop-shadow-lg shadow-lg h-44"
-    >
-      <h3 class="font-roboto font-bold text-lg drop-shadow-lg p-2 text-primary">
+      <a href="/" class="px-6 py-2 border-[1px] border-primary hover:bg-primary font-semibold duration-500 text-white text-sm m-auto">Leer más</a>      
+    </div>  
+    <div class="mx-3 bg-darkbg aspect-square max-w-[480px] px-4 py-6 flex flex-col">
+      <div class="m-auto w-24 p-2">
+        <Forms strokeColor="#FFD700"/>
+      </div>
+      <h3 class="font-roboto font-bold text-white text-xl mb-4">
         Preparación de Formularios Consulares
-      </h3>
-      <p class="font-roboto p-4">
+      </h3>      
+      <p class="font-slab text-white/70 mb-4">
         Te ayudamos a completar correctamente los formularios y anexos
-        requeridos por los consulados.
+        requeridos por los consulados..
       </p>
-    </div>
-    <div
-      class="mx-8 my-2 border-solid border-black border-2 border-b-4 drop-shadow-lg shadow-lg h-44"
-    >
-      <h3 class="font-roboto font-bold text-lg drop-shadow-lg p-2 text-primary">
+      <a href="/" class="px-6 py-2 border-[1px] border-primary hover:bg-primary font-semibold duration-500 text-white text-sm m-auto">Leer más</a>      
+    </div>  
+    <div class="mx-3 bg-darkbg aspect-square max-w-[480px] px-4 py-6 flex flex-col">
+      <div class="m-auto w-24 p-2">
+        <Check strokeColor="#FFD700"/>
+      </div>
+      <h3 class="font-roboto font-bold text-white text-xl mb-4">
         Gestión de Pasaporte y Renovaciones
-      </h3>
-      <p class="font-roboto p-4">
+      </h3>      
+      <p class="font-slab text-white/70 mb-4">
         Te asistimos en la obtención de tu pasaporte o su renovación, asegurando
         un proceso ágil y sin contratiempos.
       </p>
+      <a href="/" class="px-6 py-2 border-[1px] border-primary hover:bg-primary font-semibold duration-500 text-white text-sm m-auto">Leer más</a>      
     </div>
-    <button
-      class="my-4 p-3 bg-secondary font-bold text-white text-lg drop-shadow-lg shadow-lg"
-    >
-      Contactanos para mas Info
-    </button>
+  </div>    
   </div>
 </section>

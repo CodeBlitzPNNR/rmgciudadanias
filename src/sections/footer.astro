@@ -1,18 +1,24 @@
 ---
-
+import Logo from "../../public/rmgSF-compact.png"
+import Image from "astro/components/Image.astro"
 ---
 
-<section id="footer" class="bg-secondary text-white">
-  <div
-    class="container-central py-2 px-8 flex flex-col items-center justify-center"
-  >
-    <div class="font-bold px-10 text-center text-sm">
+<section id="footer" class="bg-black text-gold/90 h-[200px] flex justify-between px-8">
+  
+    <div class="font-semibold text-sm p-4">
       <ul>
-        <li class="p-1">Home</li>
-        <li class="p-1">Nosotros</li>
-        <li class="p-1">Servicios</li>
-        <li class="p-1">Contacto</li>
+        <li class="p-1">- Home</li>
+        <li class="p-1">- Nosotros</li>
+        <li class="p-1">- Servicios</li>
+        <li class="p-1">- Contacto</li>
       </ul>
     </div>
-  </div>
+    <div>
+      
+        <a class="bg-red-300" href="#up">
+          <Image src={Logo} alt="Logo de RMG Ciudadanias" class="max-w-48 p-2" />
+        </a>
+      
+    </div>
+  
 </section>

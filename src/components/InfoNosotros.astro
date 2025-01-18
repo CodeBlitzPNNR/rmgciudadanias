@@ -5,32 +5,46 @@ import Img from "/public/Us.jpg";
 
 <section
   id="Us"
-  class="h-full bg-primary text-center border-solid border-black border-t-2 border-b-4 drop-shadow-lg shadow-lg"
+  class="h-full text-center border-solid border-black border-t-2 border-b-4 drop-shadow-lg shadow-lg confetti"
 >
   <div class="container-central flex flex-col items-center justify-center py-3">
-    <h2 class="font-roboto font-bold text-xl text-white p-3">
-      ¿Quienes Somos?
-    </h2>
+    <div class="py-16">
+      <p class="font-bold text-primary text-sm">¿Quiénes somos?</p>
+      <h2 class="font-roboto font-semibold text-3xl px-3 text-white">
+        Sobre nosotros
+      </h2>    
+    </div> 
     <Image
       src={Img}
       alt="Foto de los creadores de RMG Ciudadanias"
-      class="max-w-xs py-2 drop-shadow-md"
+      class="max-w-[320px] mx-2"
     />
-    <p class="px-8 py-2 text-white">
-      En RMG Ciudadanías somos Agustina y Fernando, apasionados por ayudar a
-      otros a reconectar con sus raíces. Descendemos de europeos, y nuestra
-      historia comenzó cuando tramitamos nuestras propias ciudadanías. Lo que
-      aprendimos en ese proceso lo transformamos en este proyecto que tanto
-      amamos, con el objetivo de acompañarte paso a paso, resolver tus dudas y
-      hacer que todo sea más simple y llevadero.
-    </p>
-    <p class="px-8 py-2 text-white">
-      Sabemos que cada caso es único, y lo tratamos como propio. Nos encanta
-      sumergirnos en las historias familiares, buscar esos documentos tan
-      importantes y ser parte de este momento tan especial. Porque para
-      nosotros, esto no es solo un trámite: es un puente hacia tus raíces, una
-      conexión con tus orígenes y el inicio de un mundo lleno de nuevas
-      oportunidades.
-    </p>
+    <div class="text-white text-sm">
+      <p class="px-8 py-2 text-white">
+        <span class="font-semibold">RMG Ciudadanías somos Agustina y Fernando</span>, dos apasionados por ayudar
+        a otros a reconectar con sus raíces. Nuestra historia comenzó al
+        tramitar nuestras propias ciudadanías europeas. La experiencia y
+        aprendizajes de ese camino nos inspiraron a crear este proyecto, con el
+        propósito de acompañarte paso a paso en tu propio proceso.
+      </p>
+      <p class="px-8 py-2 text-white">
+        <span class="font-semibold">Entendemos que cada caso es único y lo tratamos como si fuera propio.</span>
+        Nos dedicamos a descubrir las historias familiares, encontrar los
+        documentos clave y ser parte de este momento tan especial para vos.
+      </p>
+      <p class="px-8 py-2 text-white">
+        <span class="font-semibold">Para nosotros, esto no es solo un trámite.</span> Es un puente hacia tus
+        orígenes, una conexión con tus raíces y el comienzo de nuevas
+        oportunidades en el mundo. Queremos hacer que este recorrido sea más
+        simple, llevadero y lleno de significado.
+      </p>
+    </div>
   </div>
 </section>
+
+<style>
+  .confetti {
+    background-image: url("../../public/bg-us.svg");
+    background-size: cover;
+  }
+</style>

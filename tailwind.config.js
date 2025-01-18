@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 export default {
   content: [
     "./src/**/*.{astro,html,js,jsx,ts,tsx,vue,svelte}",
@@ -10,14 +11,17 @@ export default {
       },
       colors: {
         text: '#140d0d',
-        background: '#ffffff',
+        background: '#FAF9F6',
+        darkbg: '#1d1c1c',        
         primary: '#a60827',
         secondary: '#487030',
         accent: '#bacc67',
+        gold: '#FFD700',
+        darkgold: "#B69D74",
       },
-      fontFamily: {
-        custom: ['"Poppins"', 'serif'],
-        roboto: ['"Roboto"', 'Poppins'],
+      fontFamily: {        
+        roboto: ['Roboto', 'sans-serif'],
+        slab: ['Roboto Slab Variable', 'serif']        
       },
     },
   },
