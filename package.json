@@ -11,6 +11,8 @@
   "dependencies": {
     "@fontsource-variable/roboto-slab": "^5.1.1",
     "@fontsource/roboto": "^5.1.1",
+    "@preline/collapse": "^2.5.2",
+    "@preline/overlay": "^2.5.2",
     "astro": "^5.1.1",
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.49",
