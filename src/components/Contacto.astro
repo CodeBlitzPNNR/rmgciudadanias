@@ -19,13 +19,13 @@ import contact from "../../public/contact.webp"
       <div class="flex gap-4 justify-left items-center text-left m-auto w-[300px]">
         <Tel /><div>
           <p class="font-semibold">Teléfono</p>
-          <p class="font-semibold">+54 (11) 1234 - 5678</p>          
+          <a href="tel: 123-456-7890" class="font-semibold">+54 (11) 1234 - 5678</a>          
         </div>
       </div>
       <div class="flex gap-4 justify-left items-center text-left m-auto w-[300px]">
         <Mail /><div>
           <p class="font-semibold">Correo electrónico</p>
-          <p class="font-semibold">rmgciudadanias@blablabla.com</p>          
+          <a href="mailto:rmgciudadanias@blablabla.com" class="font-semibold">rmgciudadanias@blablabla.com</a>          
         </div>
       </div>
     </div>
@@ -92,12 +92,12 @@ import contact from "../../public/contact.webp"
         name="comment"
         rows="4"
         placeholder="Escribe tu mensaje aquí"
-        class="py-2 border-solid border-b-2 px-1 border-white/70 mb-4 text-white bg-transparent"
+        class="py-2 border-solid border-b-2 px-1 border-white/70 mb-4 text-white bg-transparent resize-none"
       ></textarea>
 
       <button
         type="submit"
-        class="border-2 border-primary text-white text-lg m-auto px-12 py-2 mt-2 cursor-pointer"
+        class="border-2 border-primary text-white text-lg m-auto px-12 py-2 mt-2 cursor-pointer hover:bg-primary duration-300"
         >Enviar</button
       >
     </form>
