@@ -3,14 +3,14 @@ import Logo from "../../public/rmgSF-compact.png"
 import Image from "astro/components/Image.astro"
 ---
 
-<section id="footer" class="bg-darkbg text-white/70 h-[200px] flex justify-between px-8">
-  
+<section id="footer" class="bg-darkbg text-white/0 h-[200px] px-8">
+  <div class="max-w-[1280px] flex justify-between m-auto">
     <div class="font-semibold text-sm p-4">
       <ul>
-        <li class="p-1 hover:text-gold">- Home</li>
-        <li class="p-1 hover:text-gold">- Nosotros</li>
-        <li class="p-1 hover:text-gold">- Servicios</li>
-        <li class="p-1 hover:text-gold">- Contacto</li>
+        <li class="p-1 hover:text-gold cursor-pointer">- Home</li>
+        <li class="p-1 hover:text-gold cursor-pointer">- Nosotros</li>
+        <li class="p-1 hover:text-gold cursor-pointer">- Servicios</li>
+        <li class="p-1 hover:text-gold cursor-pointer">- Contacto</li>
       </ul>
     </div>
     <div>
@@ -19,6 +19,10 @@ import Image from "astro/components/Image.astro"
           <Image src={Logo} alt="Logo de RMG Ciudadanias" class="max-w-48 p-2" />
         </a>
       
+    </div>
+    </div>
+    <div class="flex text-center justify-center">
+      <a href="https://codeblitz.com.ar">by <span class="text-gold hover:text-primary duration-200">codeBlitz</span></a>
     </div>
   
 </section>

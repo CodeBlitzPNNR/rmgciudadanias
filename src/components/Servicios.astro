@@ -6,16 +6,16 @@ import BookIcon from "../components/BookIcon.astro";
 ---
 
 <section id="servicios">
-  <div class="container-central text-center bg-white">
+  <div class="container-central text-center bg-background">
     <div class="py-16">
-      <p class="font-bold text-primary text-sm">¿Cómo te podemos ayudar?</p>
-      <h2 class="font-roboto font-bold text-3xl px-3 text-black">
+      <p class="font-bold text-primary text-sm md:text-lg">¿Cómo te podemos ayudar?</p>
+      <h2 class="font-roboto font-bold text-3xl px-3 text-black md:text-4xl">
         Nuestros servicios
       </h2>
     </div>
-    <div class="flex flex-col gap-3 pb-6">
+    <div class="flex flex-col gap-6 pb-6 lg:grid-cols-2 lg:grid lg:place-items-center">
       <div
-        class="mx-3 bg-darkbg aspect-square max-w-[480px] px-4 py-6 flex flex-col items-center justify-center constellation"
+        class="mx-3 bg-darkbg aspect-square w-[480px] px-4 py-6 flex flex-col items-center justify-center constellation"
       >
         <div class="my-4">
           <BookIcon />

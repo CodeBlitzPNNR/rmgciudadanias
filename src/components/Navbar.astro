@@ -13,7 +13,7 @@ const navLinks = [
 
 <!-- Main header component -->
 <header
-  class="fixed inset-x-0 z-50 flex w-full flex-wrap text-sm md:flex-nowrap md:justify-start bg-transparent top-2"
+  class="fixed inset-x-0 z-50 flex w-full flex-wrap text-sm md:flex-nowrap md:justify-start bg-transparent top-2 md:max-w-[1600px] md:m-auto"
 >
   <!-- Navigation container -->
   <nav
@@ -23,7 +23,7 @@ const navLinks = [
     <div class="flex items-center justify-between">
       <!-- Brand logo -->
       <a
-        class="flex-none rounded-lg text-xl font-bold outline-none ring-zinc-500 focus-visible:ring dark:ring-zinc-200 dark:focus:outline-none"
+        class="flex-none rounded-lg text-xl font-bold outline-none ring-zinc-500 focus-visible:ring dark:ring-zinc-200 dark:focus:outline-none h-auto w-20 md:w-28"
         href='/'
         aria-label="Brand"
       >
@@ -78,7 +78,7 @@ const navLinks = [
     >
       <!-- Navigation links container -->
       <div
-        class="px-4 my-3 flex flex-col gap-x-0 gap-y-4 md:mt-0 md:flex-row md:items-center md:justify-end md:gap-x-4 lg:gap-x-7 md:gap-y-0 md:ps-7"
+        class="px-4 flex flex-col gap-x-0 gap-y-4 md:mt-0 md:flex-row md:items-center md:justify-end md:gap-x-4 lg:gap-x-7 md:gap-y-0 md:ps-7"
       >
         <!-- Navigation links and Authentication component -->
         {navLinks.map(link => (
